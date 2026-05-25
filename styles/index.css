@@ -1,0 +1,336 @@
+:root {
+  --nav-color: #00132e;
+  --nav-text-color: white;
+  --nav-button-color: #1156d4;
+  --hero-container-bg-color: #001331;
+  --table-header-bg-color: #1750b4;
+}
+/* Reset */
+body {
+  margin: 0;
+  padding: 0;
+}
+main {
+  width: 100%;
+}
+
+/* Header styles */
+header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--nav-color);
+}
+header > img:hover {
+  cursor: pointer;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1rem;
+}
+nav > ul {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+  list-style: none;
+  gap: 1rem;
+}
+nav > ul > li > a {
+  color: var(--nav-text-color);
+  font-size: 1rem;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 500;
+}
+.register-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 14px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  background-color: blue;
+  background-origin: border-box;
+}
+.register-button:hover {
+  cursor: pointer;
+}
+
+/* hero content */
+.heroContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--hero-container-bg-color);
+  padding-bottom: 2rem;
+}
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 20rem;
+  padding-left: 3rem;
+}
+
+.heroImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20rem;
+  background-blend-mode: screen;
+}
+.heroHeadingContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+.heroHeadingContent > h1,
+h2 {
+  color: var(--nav-text-color);
+  text-align: left;
+}
+.heroHeadingContent > h1 > span {
+  color: var(--nav-button-color);
+}
+.heroHeadingContent > h2 {
+  margin-top: 0;
+}
+.heroHeadingContent > h1 {
+  margin-bottom: 0;
+  font-size: 3rem;
+}
+.heroDescription {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--nav-text-color);
+}
+.heroImageContent {
+  object-fit: cover;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    var(--hero-container-bg-color) 20%
+  );
+}
+
+/* Calender Details Content */
+.conferenceDetailsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background-color: var(--nav-text-color);
+  padding-bottom: 2rem;
+}
+.conferenceTimeContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: stretch;
+  gap: 8px;
+  margin-left: 4rem;
+  border-right: solid 1px;
+  margin-top: 10px;
+  flex: 1;
+}
+.icon {
+  font-size: 2rem;
+}
+.conferenceIconContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+#conference-heading {
+  font-size: 1.4rem;
+  color: var(--nav-button-color);
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.conferenceLabel {
+  font-size: 1rem;
+  color: var(--nav-button-color);
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+.conferenceDataLabel {
+  font-size: 0.875rem;
+  margin-left: 40px;
+}
+td,
+th {
+  text-align: left;
+  padding: 8px;
+  height: 50px;
+}
+table {
+  border-collapse: collapse;
+}
+thead {
+  background-color: var(--table-header-bg-color);
+  color: white;
+}
+th:first-child {
+  border-top-left-radius: 10px;
+}
+th:last-child {
+  border-top-right-radius: 10px;
+}
+.conferenceFeeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  flex: 1;
+}
+/* What to Expect */
+.whatToExceptContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+.whatToExceptContainer > h1 {
+  color: var(--nav-button-color);
+}
+.whatToExceptContainer > span {
+  color: black;
+  font-size: 1.75rem;
+  font-weight: 400;
+  width: 85%;
+  text-align: center;
+}
+.programHighlights {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+.programHighlights > h1 {
+  color: var(--nav-button-color);
+}
+.programHighlights > span {
+  color: black;
+  font-size: 1.75rem;
+  font-weight: 400;
+  width: 85%;
+  text-align: center;
+}
+
+/* Schedule Overview */
+.scheduleOverviewContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 2rem;
+  gap: 2rem;
+}
+.scheduleCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+  border: solid 1px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.scheduleCardContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.scheduleCardItem {
+  display: flex;
+  min-height: 120px;
+}
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75px;
+  width: 75px;
+  background-color: #bbb;
+  border-radius: 50%;
+}
+.scheduleCardTimeItem {
+  display: flex;
+  flex-direction: column;
+}
+.resetSpaceAround {
+  margin-left: 9px;
+  margin-right: 9px;
+}
+.scheduleCardMainHeading {
+  font-size: 1.25rem;
+  color: var(--nav-button-color);
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.scheduleCardSubHeading {
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+/* Featured speakers */
+.speakerContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 2rem;
+  gap: 2rem;
+}
+.speakerCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+  border: solid 1px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.speakerDetails{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.speakerProfileImageCircle {
+    display: flex;
+    max-width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    object-position: 50% 10%;
+    background-color: #bbb;
+    border-radius: 50%;
+}
