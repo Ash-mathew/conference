@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Design North 2026 is a UI/UX conference in Calgary, Alberta.">
+  <meta name="author" content="Ashley Mathew">
   <link rel="stylesheet" href="./styles/index.css" />
   <link rel="icon" type="image/x-icon" href="./images/favicon.png">
   <title>Design North 2026</title>
@@ -13,8 +15,8 @@
   <main>
     <!-- NavBar -->
     <header>
-      <img src="./images/logo dark.png" alt="Logo of Design North Conference" height="120" width="120" />
-      <nav>
+      <img src="./images/logo%20dark.png" alt="Logo of Design North Conference" height="100" width="100" />
+      <nav role="navigation">
         <ul>
           <li><a href="#">About</a></li>
           <li><a href="#">Details</a></li>
@@ -22,16 +24,16 @@
           <li><a href="#">Speakers</a></li>
           <li><a href="#">Sessions</a></li>
           <li><a href="#">Venue</a></li>
-          <button class="register-button">Register</button>
         </ul>
+        <button class="register-button" role="button" tabindex="0">Register</button>
       </nav>
     </header>
 
     <!-- Hero Content -->
     <section class="heroContainer">
-      <div class="heroContent">
+      <article class="heroContent">
         <div class="heroHeadingContent">
-          <h1 id="hero-heading">DESIGN NORTH <span>2026</span></h1>
+          <h1 id="hero-heading" role="heading">DESIGN NORTH <span>2026</span></h1>
           <h2 id="hero-subheading">A Web & UX Conference</h2>
         </div>
         <div class="heroDescription">
@@ -51,17 +53,17 @@
             long-term maintainability.
           </p>
         </div>
-      </div>
+      </article>
       <div class="heroImage">
-        <img src="./images/empty stage.png" alt="Banner of Conference stage with empty chairs" height="320" width="500"
-          class="heroImageContent" />
+        <img src="./images/empty%20stage.png" alt="Banner of Conference stage with empty chairs" height="320"
+          width="500" class="heroImageContent">
       </div>
     </section>
 
     <!-- Conference Details Content -->
     <section class="conferenceDetailsContainer">
       <div class="conferenceTimeContainer">
-        <h1 id="conference-heading">CONFERENCE DETAILS</h1>
+        <h1 class="conference-heading">CONFERENCE DETAILS</h1>
         <div class="flex-table">
           <div class="flex-row header">
             <div class="flex-cell iconCell">&#128197;</div>
@@ -87,7 +89,9 @@
           </div>
           <div class="flex-row">
             <div class="flex-cell"> </div>
-            <div class="flex-cell datacell">Contemporary Calgary Calgary, Alberta</div>
+            <div class="flex-cell datacell">
+              <span>Contemporary Calgary </span><span id="venueName">Calgary, Alberta</span>
+            </div>
           </div>
 
           <div class="flex-row header">
@@ -100,13 +104,13 @@
               Web designers, UX designers, UI designers, front-end developers,
               content strategists,
               product designers, students, educators, and digital teams working
-              collaboratively.</span>
+              collaboratively.
             </div>
           </div>
         </div>
       </div>
       <div class="conferenceFeeContainer">
-        <h1 id="conference-heading">REGISTRATION OPTIONS</h1>
+        <h1 class="conference-heading">REGISTRATION OPTIONS</h1>
         <div id="feesContainer">
           <table>
             <thead>
@@ -119,17 +123,17 @@
             <tr>
               <td>Student Pass</td>
               <td>Full conference access</td>
-              <td style="color: green">Free</td>
+              <td id="tdGreenColor">Free</td>
             </tr>
             <tr>
               <td>Professional Pass</td>
               <td>Full conference access</td>
-              <td style="color: #1750b4">$295</td>
+              <td class="tdBlueColor">$295</td>
             </tr>
             <tr>
               <td>Workshop Add-on</td>
               <td>Selected workshops only</td>
-              <td style="color: #1750b4">$95</td>
+              <td class="tdBlueColor">$95</td>
             </tr>
           </table>
           <p>&#128205; Student passes require valid full-time student identification at check-in.</p>
@@ -148,7 +152,8 @@
       <span>Sessions include discussions on accessibility, responsive layouts,
         accessible HTML, maintainable CSS, design systems, content strategy,
         and collaboration between design, development, and QA teams.</span>
-      <span style="color: #1750b4;font-weight: bold;">Free admission is available for full-time students with valid
+      <span class="tdBlueColor" id="warningStatement">
+        Free admission is available for full-time students with valid
         identification.</span>
     </section>
     <!-- Program Highlights -->
@@ -230,10 +235,10 @@
       <div class="speakerContainer">
         <div class="speakerCard">
           <div class="speakerDetails">
-            <img src="./images/speaker alex morgan.png" class="speakerProfileImageCircle" alt="Alex Morgan speaker" />
+            <img src="./images/speaker%20alex%20morgan.png" class="speakerProfileImageCircle" alt="Alex Morgan speaker">
             <div class="speakerRightContainer">
               <span class="speakerName">Alex Morgan</span>
-              <span style="display: block;" class="speakerDesignation">Senior UX Designer, Product Team</span>
+              <span class="speakerDesignation">Senior UX Designer, Product Team</span>
               <span class="speakerDescriptionContainer">Alex works on large-scale digital platforms with a focus on
                 accessibility, research-driven design
                 decisions, and inclusive user experiences.</span>
@@ -242,10 +247,10 @@
         </div>
         <div class="speakerCard">
           <div class="speakerDetails">
-            <img src="./images/speaker priya patel.png" class="speakerProfileImageCircle" alt="Priya Patel speaker" />
+            <img src="./images/speaker%20priya%20patel.png" class="speakerProfileImageCircle" alt="Priya Patel speaker">
             <div class="speakerRightContainer">
               <span class="speakerName">Priya Patel</span>
-              <span style="display: block;" class="speakerDesignation">Front-End Developer & Design Systems Lead</span>
+              <span class="speakerDesignation">Front-End Developer & Design Systems Lead</span>
               <span class="speakerDescriptionContainer">Priya specializes in bridging the gap between design and
                 development, with a focus on maintainable
                 CSS and scalable systems.</span>
@@ -254,10 +259,10 @@
         </div>
         <div class="speakerCard">
           <div class="speakerDetails">
-            <img src="./images/conference speaker.png" class="speakerProfileImageCircle" alt="Jordan Ellis speaker" />
+            <img src="./images/conference%20speaker.png" class="speakerProfileImageCircle" alt="Jordan Ellis speaker">
             <div class="speakerRightContainer">
               <span class="speakerName">Jordan Ellis</span>
-              <span style="display: block;" class="speakerDesignation">Digital Product Consultant</span>
+              <span class="speakerDesignation">Digital Product Consultant</span>
               <span class="speakerDescriptionContainer">Jordan helps organizations align business goals with user needs
                 through content strategy and
                 information architecture.</span>
@@ -266,10 +271,10 @@
         </div>
         <div class="speakerCard">
           <div class="speakerDetails">
-            <img src="./images/speaker mei chen.png" class="speakerProfileImageCircle" alt="Mei Chen speaker" />
+            <img src="./images/speaker%20mei%20chen.png" class="speakerProfileImageCircle" alt="Mei Chen speaker">
             <div class="speakerRightContainer">
               <span class="speakerName">Mei Chen</span>
-              <span style="display: block;" class="speakerDesignation">UX Researcher & Workshop Facilitator</span>
+              <span class="speakerDesignation">UX Researcher & Workshop Facilitator</span>
               <span class="speakerDescriptionContainer">Mei focuses on qualitative research and translating insights
                 into actionable design
                 improvements.</span>
@@ -278,11 +283,11 @@
         </div>
         <div class="speakerCard">
           <div class="speakerDetails">
-            <img src="./images/speaker ryan thompson.png" class="speakerProfileImageCircle"
-              alt="Ryan Thompson speaker" />
+            <img src="./images/speaker%20ryan%20thompson.png" class="speakerProfileImageCircle"
+              alt="Ryan Thompson speaker">
             <div class="speakerRightContainer">
               <span class="speakerName">Ryan Thompson</span>
-              <span style="display: block;" class="speakerDesignation">Independent Web Designer</span>
+              <span class="speakerDesignation">Independent Web Designer</span>
               <span class="speakerDescriptionContainer">Ryan works with startups and small teams to build accessible,
                 performance-focused websites.</span>
             </div>
@@ -308,7 +313,7 @@
         <div class="accessibilityListContainer">
           <h1>VENUE & ACCESSIBILITY</h1>
           <div class="accessibilityContentContainer">
-            <img src="./images/Venue.jpg" alt="Venue Image" class="venueImage" />
+            <img src="./images/Venue.jpg" alt="Venue Image" class="venueImage">
             <div id="accessibilityVenueDescription">Contemporary Calgary is a fully accessible venue with step-free
               access, elevators, and accessible
               washrooms throughout the building.
@@ -317,8 +322,9 @@
             </div>
 
           </div>
-          <div>For general inquiries, accessibility questions, or student registration details, contact the conference
-            team at info@designnorthconf.ca</div>
+          <div id="accessibilityContactDescription">For general inquiries, accessibility questions, or student
+            registration details, contact the conference
+            team at <a href="mailto:info@designnorthconf.ca">info@designnorthconf.ca</a></div>
         </div>
       </div>
     </section>
@@ -326,23 +332,27 @@
     <footer>
       <div class="footer-content">
         <div>
-          <span>GET IN TOUCH</span>
-          <span style="display: block;margin-bottom: 20px;">demo@gmail.com</span>
+          <span class="footerHeading">GET IN TOUCH</span>
+          <span class="footerContent" id="footerContactEle">
+            <a href="mailto:info@designnorthconf.ca">info@designnorthconf.ca</a></span>
         </div>
-        <div style="max-width: 600px;">
-          <span>STAY UPDATED</span>
-          <span style="display: block;text-align: center;word-break: break-all;">For updates, speaker announcements, and
+        <div id="footerWidth">
+          <span class="footerHeading">STAY UPDATED</span>
+          <span class="footerContent" id="footerEle">For updates,
+            speaker announcements, and
             registration details, visit the official conference website or
             follow Design North on social media.</span>
         </div>
         <div>
-          <span>NOTES</span>
-          <span style="display: block;">Some workshops require advance registration and have limited capacity.</span>
+          <span class="footerHeading">NOTES</span>
+          <span class="footerContent" id="footerContent">Some workshops require advance registration and have
+            limited capacity.</span>
+          <span class="footerContent" id="footerContent">Schedule details are subject to change.</span>
         </div>
 
       </div>
-      <div id="copyright"><small>&copy; 
-        Design North Conference | Calgary, Alberta
+      <div id="copyright"><small class="footerContent">&copy;
+          Design North Conference | Calgary, Alberta
         </small></div>
     </footer>
   </main>
